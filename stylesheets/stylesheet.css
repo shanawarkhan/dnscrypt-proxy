@@ -20,12 +20,11 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 5rem;
   z-index: 10;
   background: #383e41;
   text-align: center;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 
