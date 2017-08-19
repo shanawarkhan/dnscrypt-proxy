@@ -56,7 +56,7 @@
                 and haven't been tampered with.
             </p>
 
-            <p>It is an open specification, with free and opensource reference implementations, and it is not affiliated with
+            <p>It is an open specification, with free and open source reference implementations, and it is not affiliated with
                 any company nor organization.</p>
 
             <h2>Free, DNSCrypt-enabled resolvers are available all over the world</h2>
@@ -115,8 +115,8 @@
 
                 <p>
                     <strong>Important:</strong> We are aware of fake packages pretending to be DNSCrypt Windows clients,
-                    that actually contain malware/PUP. Do not download anything that pretends to be a DNSCrypt client from
-                    torrents, links in Youtube videos or unofficial download locations.
+                    that actually contain Malware/Potentially Unwanted Program (PUP). Do not download anything that pretends to be a DNSCrypt client from
+                    torrents, links in YouTube videos or unofficial download locations.
                 </p>
             </section>
 
@@ -155,23 +155,23 @@
                 <ul>
                     <li>Start by downloading a precompiled <a href="https://download.dnscrypt.org/dnscrypt-proxy/" target="_blank"
                             rel="noopener">dnscrypt-proxy package for Android</a>.</li>
-                    <li>If you want to change the DNSCrypt resolver to use, unzip the archive, edit the <code>RESOLVER_NAME</code>                        variable in <code>system/etc/init.d/99dnscrypt</code>. Keep the content as a ZIP file, with the original
+                    <li>If you want to change the DNSCrypt resolver, unzip the downloaded archive, edit the <code>RESOLVER_NAME</code>                        variable in <code>system/etc/init.d/99dnscrypt</code>. Keep the content as a ZIP file, with the original
                         structure.
                     </li>
                     <li>Upload the ZIP file to the device, into <code>/sdcard</code> or any location you can write to.</li>
                     <li>Make sure that you have a custom recovery such as TWRP or CWM. The easiest way is to download and install
-                        <strong>TWRP Manager</strong> from the Google Play Store. Reboot in recovery mode and install the
+                        <strong>TWRP Manager</strong> from the the official twrp.me website. Reboot now in 'recovery mode' and install the
                         ZIP file.
                     </li>
                     <li>Reboot.</li>
-                    <li>Dowload and install <strong>Universal Init.d</strong> from the Google Play Store. Follow the instructions
+                    <li>Download and install <strong>Universal Init.d</strong> from the Google Play Store, if you're on a custom Kernel or aftermark firmware this isn't necessary since e.g. LineageOS comes with integrated support for it. In case you don't know if you have init.d support, open the app and follow the instructions
                         until you see <code>Your Kernel Has init.d Support</code>.</li>
-                    <li>The DNSCrypt proxy should be running at this point, but your device may still use the previous DNS settings.
-                        Download and install <strong>DNS Changer</strong> fron the Google Play Store. In order to actually
-                        use DNSCrypt, enter <code>127.0.0.1</code> as the primary DNS resolver. In order to stop using DNSCrypt,
-                        leave this field empty.
+                    <li>The DNSCrypt proxy should be running at this point, but your device still use the previous DNS settings.
+                        There currently four (paid) apps which can change this behaviour, AdGuard (VPN tunnel) NetGuard (VPN tunnel), DNS Manager Pro (VPN tunnel) and Override DNS (a DNS changer). Choose one of them and download it from Google Play Store. In order to actually
+                        use DNSCrypt, enter <code>127.0.0.1</code> as the primary DNS resolver. AdGuard and NetGuard requiring you to change some additional settings (see screenshots). In order to stop DNSCrypt,
+                        just disable the apps or leave the DNS resolver field empty.
                     </li>
-                    <li>DNS changes may not be visible immediately. Android has its own DNS cache, and web browsers such as Chrome
+                    <li>DNS changes may not be visible immediately. Android has its integrated DNS cache and web browsers such as Chrome
                         have another layer of DNS caching. In order to clear Chrome's DNS cache, enter <code>chrome://net-internals/#dns</code>                        in the URL bar, and press <strong>Clear host cache</strong>.
                 </ul>
                 Relevant discussions:
@@ -275,7 +275,7 @@
                         <li>Locally block ads, trackers, malware, spam, and any website whose domain names or IP addresses match
                             a set of rules you define.</li>
                         <li>Prevent queries for local zones from being leaked.</li>
-                        <li>Reduce latency by caching resposes and avoiding requesting IPv6 addresses on IPv4-only networks.</li>
+                        <li>Reduce latency by caching responses and avoiding requesting IPv6 addresses on IPv4-only networks.</li>
                         <li>Force traffic to use TCP, to route it through TCP-only tunnels or Tor.</li>
                     </ul>
                 </p>
